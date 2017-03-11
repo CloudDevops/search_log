@@ -2,7 +2,7 @@
 
 #-----Variables------#
 
-KEYWORD="LoggerStream.write\|Logger.warn\|read errors\|connection\|unexplained"
+KEYWORD='LoggerStream.write\|Logger.warn\|read errors\|connection\|unexplained'
 
 FILE=SudoCMS.log
 
