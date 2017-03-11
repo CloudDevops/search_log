@@ -1,0 +1,155 @@
+################################################################
+2013-06-19 11:04:47 PDT
+CMS Status Update
+################################################################
+WARN [CMS] [heartbeat-[ericsson.local] Portal 2] ResourceContainer$ResourceHeartBeatListener.heartbeatFailure() - [Resource] Received HeartBeat Failure Event for Resource[9]: [ericsson.local] Portal 2: Resource Failed: Resource[id=9]: [ericsson.local] Portal 2 is down or is not a part of the Cluster
+INFO [CMS] [main] HazelcastConfig.configureClusterDiscovery() - Hazelcast discovery type: MULTICAST
+INFO [CMS] [main] HazelcastConfig.configureMulticastDiscovery() - Configuring multicast cluster discovery.
+INFO [CMS] [main] HazelcastConfig.configureMulticastDiscovery() - Cluster multicast group: 224.0.0.5
+INFO [CMS] [main] HazelcastConfig.configureMulticastDiscovery() - Cluster multicast port: 50079
+INFO [CMS] [main] HazelcastConfig.configureClusterHost() - Cluster host 192.168.10.*
+INFO [CMS] [main] HazelcastConfig.configureClusterHost() - Cluster port 6709
+INFO [CMS] [main] HazelcastConfig.configureClusterName() - Cluster name epgcluster9876543210
+ERROR [CMS] [Thread-22] LoggerStream.write() - [org.jacorb.intercept] ERROR : Cannot set default NCSC to ISO8859_1
+ERROR [CMS] [Thread-23] LoggerStream.write() - [org.jacorb.intercept] ERROR : Cannot set default NCSC to ISO8859_1
+
+################################################################
+2013-06-19 11:08:47 PDT
+EVENT: Syncing files from & to
+RUNTIME COMMAND: rsync -vzapXog /BigStore/LSV/ /QAStorage/LSV
+################################################################
+sending incremental file list
+./
+
+rsync: read errors mapping "/BigStore/Xport/": Input/output error (5)
+WARNING: /BigStore/Xport/ failed verification -- update discarded (will try again).
+
+################################################################
+2013-06-19 11:14:47 PDT
+CMS Status Update
+################################################################
+ERROR [CMS] [heartbeat-[ericsson.local] Portal 2] HeartBeatService$HeartBeatCommand.testHttpsURL() - No Connection: https://pt2.ericsson.local:8443/userportal
+java.net.ConnectException: Connection refused
+
+################################################################
+2013-06-19 11:18:47 PDT
+EVENT: Syncing files from & to
+RUNTIME COMMAND: rsync -vzapXog /BigStore/LSV/ /QAStorage/LSV
+################################################################
+sending incremental file list
+./
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at /BigStore/Xport/(453) [sender=2.6.9]
+
+################################################################
+2013-06-19 11:24:29 PDT
+CMS Status Update
+################################################################
+WARN [CMS] [main] Logger.warn() - Persistence provider caller does not implement the EJB3 spec correctly. PersistenceUnitInfo.getNewTempClassLoader() is null.
+WARN [CMS] [main] Logger.warn() - InitialContext did not implement EventContext
+WARN [CMS] [main] Logger.warn() - JTASessionContext being used with JDBCTransactionFactory; auto-flush will not operate correctly with getCurrentSession()
+execve("/opt/android-sdk-linux/tools/emulator", ["/opt/android-sdk-linux/tools/emu"...], [/* 64 vars */]) = -1 ENOENT (No such file or directory)
+exit_group(1)                           = ?
+
+################################################################
+2013-06-19 11:28:57 PDT
+EVENT: Syncing files from & to
+RUNTIME COMMAND: rsync -vzapXog /BigStore/LSV/ /QAStorage/LSV
+################################################################
+sending incremental file list
+E2E_TestData & Configuration/CMS_3.1/
+E2E_TestData & Configuration/CMS_3.1/E2E_TestSetup/
+E2E_TestData & Configuration/CMS_3.1/E2E_TestSetup/E2E_TestSetup/
+E2E_TestData & Configuration/CMS_3.1/E2E_TestSetup/E2E_TestSetup/E2E-1.0.0.4-1.noarch.rpm
+E2E_TestData & Configuration/CMS_3.1/E2E_TestSetup/E2E_TestSetup/CMS_Custom/
+E2E_TestData & Configuration/CMS_3.1/E2E_TestSetup/E2E_TestSetup/CMS_Custom/Licensing rule_detail.doc
+E2E_TestData & Configuration/CMS_3.1/E2E_TestSetup/E2E_TestSetup/CMS_Custom/LookupKeys.JPG
+E2E_TestData & Configuration/CMS_3.1/E2E_TestSetup/E2E_TestSetup/CMS_Custom/Normalization RuleSets.JPG
+E2E_TestData & Configuration/CMS_3.1/E2E_TestSetup/E2E_TestSetup/CMS_Custom/Resources_list.JPG
+E2E_TestData & Configuration/CMS_3.1/E2E_TestSetup/E2E_TestSetup/CMS_Custom/Sites_detail.doc
+E2E_TestData & Configuration/CMS_3.1/E2E_TestSetup/E2E_TestSetup/CMS_Custom/Targeting rule sets.JPG
+E2E_TestData & Configuration/CMS_3.1/E2E_TestSetup/E2E_TestSetup/CMS_Custom/customFields.JPG
+E2E_TestData & Configuration/CMS_3.1/E2E_TestSetup/E2E_TestSetup/CMS_Custom/validation rule sets.JPG
+E2E_TestData & Configuration/CMS_3.1/E2E_TestSetup/E2E_TestSetup/Contract Manager/
+E2E_TestData & Configuration/CMS_3.1/E2E_TestSetup/E2E_TestSetup/Contract Manager/License 1.doc
+E2E_TestData & Configuration/CMS_3.1/E2E_TestSetup/E2E_TestSetup/mcs_import_export/
+E2E_TestData & Configuration/CMS_3.1/E2E_TestSetup/E2E_TestSetup/mcs_import_export/cms-import-error-1.0.0.25-1.noarch.rpm
+E2E_TestData & Configuration/CMS_3.1/E2E_TestSetup/E2E_TestSetup/mcs_import_export/rpms/
+E2E_TestData & Configuration/CMS_3.1/E2E_TestSetup/E2E_TestSetup/mcs_import_export/rpms/VerimatrixOMI-1.0.000.4-1.noarch.rpm
+E2E_TestData & Configuration/CMS_3.1/E2E_TestSetup/E2E_TestSetup/mcs_import_export/rpms/anystream-agility-resourcetype-1.0.0.1-1.noarch.rpm
+E2E_TestData & Configuration/CMS_3.1/E2E_TestSetup/E2E_TestSetup/mcs_import_export/rpms/aspera-resourcetype-2.6.3.15-1.noarch.rpm
+E2E_TestData & Configuration/CMS_3.1/E2E_TestSetup/E2E_TestSetup/mcs_import_export/rpms/baton-resourcetype-1.5.0.33-1.noarch.rpm
+E2E_TestData & Configuration/CMS_3.1/E2E_TestSetup/E2E_TestSetup/mcs_import_export/rpms/cacs-resourcetype-1.0.0.26-1.noarch.rpm
+E2E_TestData & Configuration/CMS_3.1/E2E_TestSetup/E2E_TestSetup/mcs_import_export/rpms/cerify-resourcetype-1.0.0.2-1.noarch.rpm
+E2E_TestData & Configuration/CMS_3.1/E2E_TestSetup/E2E_TestSetup/mcs_import_export/rpms/cms-distribution-resourcetype-1.0.0.47-1.noarch.rpm
+E2E_TestData & Configuration/CMS_3.1/E2E_TestSetup/E2E_TestSetup/mcs_import_export/rpms/dream_gallery_publisher_plugin-1.0.000.44-1.el6.x86_64.rpm
+E2E_TestData & Configuration/CMS_3.1/E2E_TestSetup/E2E_TestSetup/mcs_import_export/rpms/e2e-templates-1.0.0.5-1.noarch.rpm
+E2E_TestData & Configuration/CMS_3.1/E2E_TestSetup/E2E_TestSetup/mcs_import_export/rpms/envivio-resourcetype-1.5.0.12-1.noarch.rpm
+E2E_TestData & Configuration/CMS_3.1/E2E_TestSetup/E2E_TestSetup/mcs_import_export/rpms/rhozet-resourcetype-1.5.0.27-1.noarch.rpm
+E2E_TestData & Configuration/CMS_3.1/E2E_TestSetup/E2E_TestSetup/mcs_import_export/rpms/rottentomatoes_plugins-1.0.0.76-1.noarch.rpm
+E2E_TestData & Configuration/CMS_3.1/E2E_TestSetup/E2E_TestSetup/mcs_import_export/rpms/rovi_plugins-1.0.0.61-1.noarch.rpm
+E2E_TestData & Configuration/CMS_3.1/E2E_TestSetup/E2E_TestSetup/mcs_import_export/rpms/rovi_provider_plugin-1.0.000.11-1.el6.x86_64.rpm
+E2E_TestData & Configuration/CMS_3.1/E2E_TestSetup/E2E_TestSetup/mcs_import_export/rpms/titan-file-resourcetype-1.0.0.12-1.noarch.rpm
+E2E_TestData & Configuration/CMS_3.1/E2E_TestSetup/E2E_TestSetup/mcs_import_export/rpms/verimatrix-create-key-1.0.0.11-1.noarch.rpm
+E2E_TestData & Configuration/CMS_3.1/E2E_TestSetup/E2E_TestSetup/mcs_import_export/rpms/xmltv_msmw_publisher_plugin-1.0.000.8-1.el6.x86_64.rpm
+E2E_TestData & Configuration/CMS_3.1/E2E_TestSetup/E2E_TestSetup/rules_exported_import_export/
+E2E_TestData & Configuration/CMS_3.1/E2E_TestSetup/E2E_TestSetup/rules_exported_import_export/Warnings.20130612.135441.656.xml
+E2E_TestData & Configuration/CMS_3.1/Updated templates/
+E2E_TestData & Configuration/CMS_3.1/Updated templates/Distribution - NGMP.par
+E2E_TestData & Configuration/CMS_3.1/Updated templates/Enhance!.par
+E2E_TestData & Configuration/CMS_3.1/Updated templates/Eport Package To Folder.par
+E2E_TestData & Configuration/CMS_3.1/Updated templates/Full Package Ingest.par
+
+sent 169326972 bytes  received 2312 bytes  4515447.57 bytes/sec
+total size is 87744917780  speedup is 518.19
+
+################################################################
+2013-06-19 11:24:29 PDT
+CMS Status Update
+################################################################
+INFO [CMS] [main] SNMPAgentLifeCycleListener.contextInitialized() - Starting CMS Monitoring
+INFO [CMS] [main] SNMPAgentLifeCycleListener.contextInitialized() - CMS Monitoring started
+INFO [CMS] [template-1] AbstractTemplateReader.getReaderExtensions() - Created parser com.tandbergtv.cms.workflow.JPDLParser
+INFO [CMS] [template-1] AbstractTemplateReader.getReaderExtensions() - Created parser com.tandbergtv.workflow.driver.template.watch.WFSJpdlXmlReader
+INFO [CMS] [template-1] TemplateDAO.create() - Saved template [1] Content Normalization - v2
+INFO [CMS] [template-1] VersionBasedArchivalStrategy.archive() - Trying to delete older versions of template [1] Content Normalization - v2
+INFO [CMS] [template-1] AbstractTemplateReader.getReaderExtensions() - Created parser com.tandbergtv.cms.workflow.JPDLParser
+INFO [CMS] [template-1] AbstractTemplateReader.getReaderExtensions() - Created parser com.tandbergtv.workflow.driver.template.watch.WFSJpdlXmlReader
+INFO [CMS] [template-1] JPDLParser.addProviderIdVariable() - Added providerId variable
+INFO [CMS] [template-1] TemplateDAO.create() - Saved template [2] Asset Enhance - v4
+INFO [CMS] [template-1] VersionBasedArchivalStrategy.archive() - Trying to delete older versions of template [2] Asset Enhance - v4
+INFO [CMS] [template-1] AbstractTemplateReader.getReaderExtensions() - Created parser com.tandbergtv.cms.workflow.JPDLParser
+
+################################################################
+2013-06-19 11:35:29 PDT
+EVENT: Syncing files from & to
+RUNTIME COMMAND: rsync -vzapXog /BigStore/Xport/ /QAStorage/Content
+################################################################
+sending incremental file list
+./
+
+rsync: read errors mapping "/BigStore/Xport/": Input/output error (5)
+WARNING: /BigStore/Xport/ failed verification -- update discarded (will try again).
+
+################################################################
+2013-06-19 11:24:29 PDT
+CMS Status Update
+################################################################
+WARN [CMS] [main] Logger.warn() - composite-id class does not override equals(): com.ericsson.cms.epgmgmt.entity.TaskExeInfoPK
+WARN [CMS] [main] Logger.warn() - composite-id class does not override hashCode(): com.ericsson.cms.epgmgmt.entity.TaskExeInfoPK
+WARN [CMS] [main] Logger.warn() - InitialContext did not implement EventContext
+ERROR [CMS] [main] LoggerStream.write() - 29 [main] INFO org.hibernate.cfg.Environment - Hibernate 3.3.1.GA
+ERROR [CMS] [main] LoggerStream.write() - 54 [main] INFO org.hibernate.cfg.Environment - hibernate.properties not found
+ERROR [CMS] [main] LoggerStream.write() - 64 [main] INFO org.hibernate.cfg.Environment - Bytecode provider name : javassist
+ERROR [CMS] [main] LoggerStream.write() - 75 [main] INFO org.hibernate.cfg.Environment - using JDK 1.4 java.sql.Timestamp handling
+
+################################################################
+2013-06-19 11:45:29 PDT
+EVENT: Syncing files from & to
+RUNTIME COMMAND: rsync -vzapXog /BigStore/Xport/ /QAStorage/Content
+################################################################
+sending incremental file list
+./
+
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at /BigStore/Xport/(453) [sender=2.6.9]
