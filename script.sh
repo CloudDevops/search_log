@@ -1,5 +1,5 @@
 #!/bin/bash
-source functions.sh
+source functions.lib
 
 #-----Code------#
 
