@@ -3,6 +3,7 @@
 #-----Variables------#
 
 # KEYWORDS="LoggerStream.write\|Logger.warn\|read errors\|connection\|unexplained"
+# KEYWORD1='LoggerStream.write'
 # grep KEYWORD1\|KEYWORD2\|...\|...\|KEYWORD5\| a possiblity
 
 FILE='SudoCMS.log'
