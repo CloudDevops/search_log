@@ -2,15 +2,16 @@
 
 #-----Variables------#
 
-KEYWORD='LoggerStream.write\|Logger.warn\|read errors\|connection\|unexplained'
+# KEYWORDS="LoggerStream.write\|Logger.warn\|read errors\|connection\|unexplained"
+# grep KEYWORD1\|KEYWORD2\|...\|...\|KEYWORD5\| a possiblity
 
-FILE=SudoCMS.log
+FILE='SudoCMS.log'
 
 #------Functions-----#
 
 keyword_search()
 {
-grep $KEYWORD $FILE
+grep 'LoggerStream.write\|Logger.warn\|read errors\|connection\|unexplained' $FILE
 }
 
 newline()
