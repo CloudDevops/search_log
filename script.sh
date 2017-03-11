@@ -1,30 +1,47 @@
 #!/bin/bash
 
+#-----Variables------#
+
+KEYWORD="LoggerStream.write\|Logger.warn\|read errors\|connection\|unexplained"
+
+FILE=SudoCMS.log
+
+#------Functions-----#
+
 keyword_search()
 {
-grep 'LoggerStream.write\|Logger.warn\|read errors\|connection\|unexplained' SudoCMS.log
+grep $KEYWORD $FILE
 }
 
-clear
-
+newline()
+{
 printf '\n'
+}
 
-printf 'Errors:\n' && printf '\n' 
+keyword_line()
+{
+newline && keyword_search | grep -n "$1" && newline
+}
 
-keyword_search | grep -n ERROR && printf '\n'
+keyword_count()
+{
+keyword_search | grep -c "$1"
+}
 
-printf 'Warnings:\n'
+#-----Code------#
 
-printf '\n'
+clear && newline
 
-keyword_search | grep -n WARN && printf '\n'
+printf 'Errors:\n' 
 
-printf 'Total Errors: ' 
+keyword_line ERROR
 
-keyword_search | grep -c ERROR
+printf 'Warnings:\n' 
 
-printf 'Total Warnings: '
+keyword_line WARN 
 
-keyword_search | grep -c WARN
+printf 'Total Errors: ' && keyword_count ERROR
+
+printf 'Total Warnings: ' && keyword_count WARN
 
 # Bonus: Using this sequence of logic sorts the overall errors and warnings by the line number! 
